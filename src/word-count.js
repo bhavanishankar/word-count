@@ -3,12 +3,8 @@ jbsApp.getWordCount = function(userStr) {
     if(userStr.length <=0) {
         return;
     }
-    var wordsObj = getWordsObj(userStr);
-    /*for(var prop in wordsObj) {
-        if(wordsObj.hasOwnProperty(prop)) {
-        	console.log(prop + ' : ' + wordsObj[prop].count);
-	}
-    }*/
+    getWordsObj(userStr);
+
     function getWordsObj(str) {
        var arr = str.split(' '), _wordsObj = {}, i = 0, arrLength = arr.length;
         for(i; i<arrLength; i++) {
